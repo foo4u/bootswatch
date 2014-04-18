@@ -4,12 +4,71 @@
 
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 
+@font-face {
+  font-family: BryantMedium;
+  font-style: normal;
+  src: url(/assets/ui/themes/metro/fonts/BryantWebMedium.woff);
+}
+
+body > .container {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: BryantMedium;
+  text-transform: uppercase;
+  color: @brand-primary;
+}
+
+header {
+  margin: 0 -15px 0 -15px;
+  padding: 0;
+
+  a, a:visited {
+	color: #fff;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  header {
+	height: 286px;
+
+	.logo {
+	  float: left;
+	}
+
+	.home-link {
+	  height: 100px;
+	  background-color: #CA2057;
+	}
+	.partner-link {
+	  height: 186px;
+	  padding: 0 10px 0 10px;
+	  background-color: #5f0e30;
+	}
+  }
+  .text-vertical-center {
+	p {
+	  position: relative;
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	}
+  }
+}
+
+
 // Navbar =====================================================================
 
 .navbar {
+  margin-left: -15px;
+  margin-right: -15px;
   border: none;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 15px;
+  font-family: BryantMedium;
+  //font-weight: 300;
+  text-transform: uppercase;
 
   .navbar-toggle:hover .icon-bar {
     background-color: #b3b3b3;
@@ -426,5 +485,15 @@ label,
   &-footer {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+  }
+}
+
+footer {
+  margin: @padding-large-vertical -15px 0 -15px;
+  padding: @padding-large-vertical @padding-large-horizontal;
+  background-color: @brand-primary;
+  color: #fff;
+  a, a:hover, a:visited {
+	color: #fff;
   }
 }
