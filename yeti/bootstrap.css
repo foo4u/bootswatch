@@ -5809,6 +5809,8 @@ header a:visited {
 @media (min-width: 992px) {
   header {
     height: 286px;
+    max-height: 286px;
+    overflow-y: hidden;
   }
   header .logo {
     float: left;
@@ -5829,6 +5831,9 @@ header a:visited {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+}
+article p {
+  text-align: justify;
 }
 .navbar {
   margin-left: -15px;

@@ -32,6 +32,8 @@ header {
 @media (min-width: @screen-md-min) {
   header {
 	height: 286px;
+	max-height: 286px;
+	overflow-y: hidden;
 
 	.logo {
 	  float: left;
@@ -56,6 +58,13 @@ header {
 	  transform: translateY(-50%);
 	}
   }
+}
+
+article {
+  p {
+	text-align: justify;
+  }
+
 }
 
 
