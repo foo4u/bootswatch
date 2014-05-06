@@ -6237,3 +6237,9 @@ aside.widgets img {
 .widget h4 {
   font-size: 13px;
 }
+.html-widget {
+  box-shadow: 0 3px 5px #888;
+}
+.html-widget .widgetContent {
+  padding: 0 10px 10px 10px;
+}
