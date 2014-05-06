@@ -10,6 +10,40 @@
   src: url(/assets/ui/themes/metro/fonts/BryantWebMedium.woff);
 }
 
+// Mixins
+
+.box-shadow {
+  box-shadow: 0 3px 5px #888;
+}
+
+.box-shadow-bottom {
+  -webkit-box-shadow: 0 4px 4px #aaa;
+  -moz-box-shadow:    0 4px 4px #aaa;
+  box-shadow:         0 4px 4px #aaa;
+}
+
+.rounded-corners(@radius: 5px) {
+  border-radius: @radius;
+}
+
+.skew {
+  -webkit-transform: rotate(-1deg) translate(-1px,-5px);
+  transform: rotate(-1deg) translate(-1px,-5px);
+  .box-shadow;
+  -webkit-backface-visibility: hidden;
+}
+
+.skew-simple {
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  .box-shadow;
+  -webkit-backface-visibility: hidden;
+}
+
+
+// General
+
+
 body > .container {
   background-color: #fff;
 }
@@ -23,10 +57,33 @@ h1, h2, h3, h4, h5, h6 {
 header {
   margin: 0 -15px 0 -15px;
   padding: 0;
+  background-image: url("./head_bg.png");
+  background-repeat: repeat-x;
+  background-color: #94bfe8;
+  color: #fff;
+//  text-align: center;
 
+  h1 {
+	text-transform: lowercase;
+  }
+
+  h2, h3, h4, h5, h6 {
+	color: #fff;
+	text-transform: none;
+  }
+
+  .social-links {
+	padding: 40px 15px 0 0;
+  }
+
+  img {
+	margin-right: 30px;
+  }
+/*
   a, a:visited {
 	color: #fff;
   }
+  */
 }
 
 @media (min-width: @screen-md-min) {
@@ -504,5 +561,56 @@ footer {
   color: #fff;
   a, a:hover, a:visited {
 	color: #fff;
+  }
+}
+
+article,
+aside.widgets {
+  img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }
+}
+
+// Jumbotron =================================================================
+
+.jumbotron {
+  padding: 45px @padding-large-horizontal 20px @padding-large-horizontal;
+  margin: 0px auto 0px auto;
+
+
+  h1, .h1 {
+	font-size: 50px;
+  }
+
+  p {
+	font-weight: 300;
+  }
+}
+
+// Widgets =================================================================
+
+.widget {
+  padding: 0 0 0 0;
+  margin-bottom: 25px;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #fff;
+
+  h3 {
+	display: inline-block;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+	margin: 0 0 10px 0;
+	line-height: normal;
+	font-size: 14px;
+	color: #fff !important;
+	background-color: @brand-primary;
+	.skew;
+  }
+
+  h4 {
+	font-size: 13px;
   }
 }
