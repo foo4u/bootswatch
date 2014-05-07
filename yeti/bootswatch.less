@@ -10,6 +10,12 @@
   src: url(/assets/ui/themes/metro/fonts/BryantWebMedium.woff);
 }
 
+@font-face {
+  font-family: Teletype;
+  font-style: normal;
+  src: url(teletype.woff);
+}
+
 // Mixins
 
 .box-shadow {
@@ -61,7 +67,6 @@ header {
   background-repeat: repeat-x;
   background-color: #94bfe8;
   color: #fff;
-//  text-align: center;
 
   h1 {
 	text-transform: lowercase;
@@ -579,15 +584,30 @@ aside.widgets {
   padding: 45px @padding-large-horizontal 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
-
   h1, .h1 {
-	font-size: 50px;
+	font-size: 38px;
+	word-spacing: 0.01em;
+	white-space: nowrap;
+  }
+
+  .brand {
+	font-family: @font-family-brand;
   }
 
   p {
 	font-weight: 300;
   }
 }
+
+@media (min-width: @screen-sm-min) {
+  .jumbotron {
+	h1, .h1 {
+	  font-size: 50px;
+	  word-spacing: normal;
+	}
+  }
+}
+
 
 // Widgets =================================================================
 

@@ -5785,6 +5785,11 @@ button.close {
   font-style: normal;
   src: url(/assets/ui/themes/metro/fonts/BryantWebMedium.woff);
 }
+@font-face {
+  font-family: Teletype;
+  font-style: normal;
+  src: url(teletype.woff);
+}
 .box-shadow {
   box-shadow: 0 3px 5px #888;
 }
@@ -6208,10 +6213,22 @@ aside.widgets img {
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  font-size: 50px;
+  font-size: 38px;
+  word-spacing: 0.01em;
+  white-space: nowrap;
+}
+.jumbotron .brand {
+  font-family: Teletype, Georgia, "Times New Roman", Times, serif;
 }
 .jumbotron p {
   font-weight: 300;
+}
+@media (min-width: 768px) {
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 50px;
+    word-spacing: normal;
+  }
 }
 .widget {
   padding: 0 0 0 0;
