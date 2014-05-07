@@ -6243,3 +6243,27 @@ aside.widgets img {
 .html-widget .widgetContent {
   padding: 0 10px 10px 10px;
 }
+.sponsor {
+  height: 130px;
+  padding: 0;
+  overflow: hidden;
+}
+.sponsor a img {
+  margin: auto;
+  position: absolute;
+  top: -20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 120px;
+  max-height: 120px !important;
+}
+@media (min-width: 992px) {
+  .sponsor {
+    height: 228px;
+  }
+  .sponsor a img {
+    max-width: 220px;
+    max-height: 220px;
+  }
+}

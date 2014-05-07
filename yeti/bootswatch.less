@@ -621,3 +621,32 @@ aside.widgets {
 	padding: 0 10px 10px 10px;
   }
 }
+
+// Sponsor thumbnails =================================================================
+
+.sponsor {
+  height: 130px;
+  padding: 0;
+  overflow: hidden;
+  a {
+	img {
+	  margin: auto;
+	  position: absolute;
+	  top: -20px; bottom: 0; left: 0; right: 0;
+	  max-width: 120px;
+	  max-height: 120px !important;
+	}
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .sponsor {
+	height: 228px;
+	a {
+	  img {
+		max-width: 220px;
+		max-height: 220px;
+	  }
+	}
+  }
+}
