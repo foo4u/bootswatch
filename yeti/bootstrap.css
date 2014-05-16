@@ -6204,8 +6204,13 @@ footer a:visited {
 article img,
 aside.widgets img {
   display: block;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+article h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
 }
 .jumbotron {
   padding: 45px 16px 20px 16px;
