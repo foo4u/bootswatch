@@ -63,9 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 header {
   margin: 0 -15px 0 -15px;
   padding: 0;
-  background-image: url("./head_bg.png");
-  background-repeat: repeat-x;
-  background-color: #94bfe8;
   color: #fff;
 
   h1 {
@@ -84,11 +81,38 @@ header {
   img {
 	margin-right: 30px;
   }
-/*
-  a, a:visited {
-	color: #fff;
+}
+
+.babyshowerboston {
+  header {
+    background-color: #e41837;
+
+    .social-links {
+      a, a:visited {
+        color: @boston;
+      }
+
+      a:hover {
+        color: @boston-darker;
+      }
+    }
+
+    .event-location {
+      color: @boston;
+      font-weight: bold;
+      font-size: @font-size-h1;
+    }
   }
-  */
+}
+
+.babyshowerdc {
+
+  header {
+    background-image: url("./head_bg.png");
+    background-repeat: repeat-x;
+    background-color: #94bfe8;
+  }
+
 }
 
 @media (min-width: @screen-md-min) {
@@ -589,7 +613,7 @@ article {
 // Jumbotron =================================================================
 
 .jumbotron {
-  padding: 45px @padding-large-horizontal 20px @padding-large-horizontal;
+  padding: 40px @padding-large-horizontal 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
   h1, .h1 {
