@@ -1,4 +1,5 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Slab");
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
@@ -5840,10 +5841,16 @@ header h6 {
   text-transform: none;
 }
 header .social-links {
-  padding: 40px 15px 0 0;
+  padding: 20px 15px 0 0;
 }
 header img {
   margin-right: 30px;
+}
+header .event-location {
+  font-family: 'Roboto Slab', serif;
+}
+.babyshowerboston .divider {
+  color: #022e62;
 }
 .babyshowerboston header {
   background-color: #e41837;
@@ -5856,14 +5863,21 @@ header img {
   color: #0455b4;
 }
 .babyshowerboston header .event-location {
+  padding-bottom: 15px;
   color: #022e62;
-  font-weight: bold;
-  font-size: 32px;
+  font-size: 64px;
+  line-height: 64px;
 }
 .babyshowerdc header {
-  background-image: url("head_bg.png");
-  background-repeat: repeat-x;
-  background-color: #94bfe8;
+  background: #94bfe8 url("head_bg.png") repeat-x;
+}
+.babyshowerdc header .social-links {
+  padding: 34px 15px 0 0;
+}
+.babyshowerdc header .event-location {
+  padding-bottom: 15px;
+  font-size: 51.2px;
+  line-height: 57.6px;
 }
 @media (min-width: 992px) {
   header {
@@ -5949,6 +5963,14 @@ article p {
 .navbar-inverse .dropdown-menu > .active > a,
 .navbar-inverse .dropdown-menu > .active > a:hover {
   background-color: #9e1944;
+}
+.babyshowerboston .navbar-default {
+  background-color: #022e62;
+}
+.babyshowerboston .navbar-default li > a:hover,
+.babyshowerboston .navbar-default .active > a,
+.babyshowerboston .navbar-default .active > a:hover {
+  background-color: #0455b4;
 }
 .btn {
   padding: 14px 28px;
@@ -6225,26 +6247,41 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 40px 16px 20px 16px;
+  padding: 65px 16px 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
 .jumbotron .h1 {
+  margin: 0;
+  padding: 0;
   font-size: 38px;
   word-spacing: 0.01em;
   white-space: nowrap;
+}
+.jumbotron h1 > span,
+.jumbotron .h1 > span {
+  display: none;
 }
 .jumbotron .brand {
   font-family: Teletype, Georgia, "Times New Roman", Times, serif;
 }
 .jumbotron p {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
+  line-height: 26px;
+  font-size: 26px;
 }
 @media (min-width: 768px) {
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 50px;
-    word-spacing: normal;
+    word-spacing: -10px;
+    letter-spacing: 0.01em;
+  }
+  .jumbotron h1 > span,
+  .jumbotron .h1 > span {
+    display: inline;
   }
 }
 .widget {

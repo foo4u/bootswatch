@@ -3,6 +3,7 @@
 // -----------------------------------------------------
 
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Slab");
 
 @font-face {
   font-family: BryantMedium;
@@ -75,44 +76,58 @@ header {
   }
 
   .social-links {
-	padding: 40px 15px 0 0;
+	padding: 20px 15px 0 0;
   }
 
   img {
 	margin-right: 30px;
   }
+
+  .event-location {
+    font-family: 'Roboto Slab', serif;
+  }
 }
 
 .babyshowerboston {
+
+  .divider {
+    color: @boston-blue;
+  }
+
   header {
-    background-color: #e41837;
+    background-color: @boston-red;
 
     .social-links {
       a, a:visited {
-        color: @boston;
+        color: @boston-blue;
       }
 
       a:hover {
-        color: @boston-darker;
+        color: @boston-blue-darker;
       }
     }
 
     .event-location {
-      color: @boston;
-      font-weight: bold;
-      font-size: @font-size-h1;
+      padding-bottom: 15px;
+      color: @boston-blue;
+      font-size: (@font-size-h1 * 2.0);
+      line-height: (@font-size-h1 * 2.0);
     }
   }
 }
 
 .babyshowerdc {
-
   header {
-    background-image: url("./head_bg.png");
-    background-repeat: repeat-x;
-    background-color: #94bfe8;
+    background: #94bfe8 url("./head_bg.png") repeat-x;
+    .social-links {
+      padding: 34px 15px 0 0;
+    }
+    .event-location {
+      padding-bottom: 15px;
+      font-size: (@font-size-h1 * 1.6);
+      line-height: (@font-size-h1 * 1.8);
+    }
   }
-
 }
 
 @media (min-width: @screen-md-min) {
@@ -230,6 +245,22 @@ article {
       > .active > a,
       > .active > a:hover {
         background-color: @navbar-inverse-link-hover-bg;
+      }
+    }
+  }
+}
+
+.babyshowerboston {
+  .navbar {
+
+    &-default {
+
+      background-color: @boston-blue;
+
+      li > a:hover,
+      .active > a,
+      .active > a:hover {
+        background-color: @boston-blue-darker;
       }
     }
   }
@@ -613,13 +644,19 @@ article {
 // Jumbotron =================================================================
 
 .jumbotron {
-  padding: 40px @padding-large-horizontal 20px @padding-large-horizontal;
+  padding: 65px @padding-large-horizontal 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
   h1, .h1 {
+    margin: 0;
+    padding: 0;
 	font-size: 38px;
 	word-spacing: 0.01em;
 	white-space: nowrap;
+
+    > span {
+      display: none;
+    }
   }
 
   .brand {
@@ -627,7 +664,11 @@ article {
   }
 
   p {
-	font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: @font-size-h2;
+    font-size: @font-size-h2;
   }
 }
 
@@ -635,7 +676,12 @@ article {
   .jumbotron {
 	h1, .h1 {
 	  font-size: 50px;
-	  word-spacing: normal;
+	  word-spacing: -10px;
+      letter-spacing: 0.01em;
+
+      > span {
+        display: inline;
+      }
 	}
   }
 }
