@@ -3458,7 +3458,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 10px;
+  padding: 8px 8px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -6246,7 +6246,7 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 20px 16px 20px 16px;
+  padding: 20px 0 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
@@ -6254,6 +6254,7 @@ article h2:first-of-type {
   margin: 0;
   padding: 0;
   font-size: 39px;
+  word-spacing: -0.3em;
   white-space: nowrap;
 }
 .jumbotron h1 > span,

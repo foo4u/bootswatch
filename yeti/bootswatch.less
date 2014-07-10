@@ -643,14 +643,15 @@ article {
 // Jumbotron =================================================================
 
 .jumbotron {
-  padding: 20px @padding-large-horizontal 20px @padding-large-horizontal;
+  padding: 20px 0 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
   h1, .h1 {
     margin: 0;
     padding: 0;
-	font-size: ceil(@font-size-h1 * 1.2);
-	white-space: nowrap;
+    font-size: ceil(@font-size-h1 * 1.2);
+    word-spacing: -0.3em;
+    white-space: nowrap;
 
     > span {
       display: none;
@@ -679,9 +680,7 @@ article {
 @media (min-width: @screen-sm-min) {
   .jumbotron {
 	h1, .h1 {
-//	  font-size: 50px;
-	  word-spacing: -0.1em;
-//      letter-spacing: 0.01em;
+      word-spacing: -0.1em;
 
       > span {
         display: inline;
