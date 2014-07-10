@@ -4375,7 +4375,7 @@ a.list-group-item.active > .badge,
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 200;
 }
 .container .jumbotron {
@@ -5881,8 +5881,7 @@ header .event-location {
 }
 @media (min-width: 992px) {
   header {
-    height: 286px;
-    max-height: 286px;
+    max-height: 230px;
     overflow-y: hidden;
   }
   header .logo {
@@ -6247,41 +6246,46 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 65px 16px 20px 16px;
+  padding: 20px 16px 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   margin: 0;
   padding: 0;
-  font-size: 38px;
-  word-spacing: 0.01em;
+  font-size: 39px;
   white-space: nowrap;
 }
 .jumbotron h1 > span,
 .jumbotron .h1 > span {
   display: none;
 }
+.jumbotron h2,
+.jumbotron .h2 {
+  margin: 0;
+  padding: 0;
+}
 .jumbotron .brand {
   font-family: Teletype, Georgia, "Times New Roman", Times, serif;
 }
 .jumbotron p {
   margin: 0;
-  padding: 0;
+  padding: 0 0 8px 0;
   font-weight: 300;
-  line-height: 26px;
-  font-size: 26px;
+  line-height: 19px;
+  font-size: 19px;
+  word-spacing: -3px;
 }
 @media (min-width: 768px) {
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 50px;
-    word-spacing: -10px;
-    letter-spacing: 0.01em;
+    word-spacing: -0.1em;
   }
   .jumbotron h1 > span,
   .jumbotron .h1 > span {
     display: inline;
+    font-size: 26px;
+    font-weight: normal;
   }
 }
 .widget {
