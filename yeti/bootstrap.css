@@ -5849,6 +5849,40 @@ header img {
 header .event-location {
   font-family: 'Roboto Slab', serif;
 }
+.babyshower .divider {
+  color: #ec058d;
+}
+.babyshower header {
+  background: #e7e7e7 url("head_babyshower_bg.png") repeat-x;
+  color: #ec058d;
+}
+.babyshower header h2,
+.babyshower header h3,
+.babyshower header h4,
+.babyshower header h5,
+.babyshower header h6 {
+  color: #6e6f73;
+  text-transform: none;
+}
+.babyshower header p {
+  color: #6e6f73;
+}
+.babyshower header .social-links {
+  padding: 30px 15px 0 0;
+}
+.babyshower header .social-links a,
+.babyshower header .social-links a:visited {
+  color: #ec058d;
+}
+.babyshower header .social-links a:hover {
+  color: #b8046e;
+}
+.babyshower header .event-location {
+  padding-bottom: 15px;
+  color: #ca2057;
+  font-size: 51.2px;
+  line-height: 57.6px;
+}
 .babyshowerboston .divider {
   color: #022e62;
 }
@@ -5869,7 +5903,7 @@ header .event-location {
   line-height: 64px;
 }
 .babyshowerdc header {
-  background: #94bfe8 url("head_bg.png") repeat-x;
+  background: #94bfe8 url("head_babyshowerdc_bg.png") repeat-x;
 }
 .babyshowerdc header .social-links {
   padding: 34px 15px 0 0;
@@ -5962,6 +5996,14 @@ article p {
 .navbar-inverse .dropdown-menu > .active > a,
 .navbar-inverse .dropdown-menu > .active > a:hover {
   background-color: #9e1944;
+}
+.babyshower .navbar-default {
+  background-color: #ec058d;
+}
+.babyshower .navbar-default li > a:hover,
+.babyshower .navbar-default .active > a,
+.babyshower .navbar-default .active > a:hover {
+  background-color: #b8046e;
 }
 .babyshowerboston .navbar-default {
   background-color: #022e62;
@@ -6234,6 +6276,9 @@ footer a:hover,
 footer a:visited {
   color: #fff;
 }
+.babyshower footer {
+  background-color: #ec058d;
+}
 article img,
 aside.widgets img {
   display: block;
@@ -6246,13 +6291,13 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 20px 0 20px 16px;
+  padding: 20px 16px 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   margin: 0;
-  padding: 0;
+  padding: 0 0 2px 0;
   font-size: 39px;
   word-spacing: -0.3em;
   white-space: nowrap;
@@ -6276,6 +6321,9 @@ article h2:first-of-type {
   line-height: 19px;
   font-size: 19px;
   word-spacing: -3px;
+}
+.babyshower .jumbotron {
+  padding: 30px 16px 20px 16px;
 }
 @media (min-width: 768px) {
   .jumbotron h1,

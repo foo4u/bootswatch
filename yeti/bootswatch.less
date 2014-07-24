@@ -88,6 +88,44 @@ header {
   }
 }
 
+.babyshower {
+
+  .divider {
+    color: @nyc-primary;
+  }
+
+  header {
+    background: @nyc-header-bg url("./head_babyshower_bg.png") repeat-x;
+    color: @nyc-primary;
+
+    h2, h3, h4, h5, h6 {
+      color: @nyc-secondary;
+      text-transform: none;
+    }
+
+    p {
+      color: @nyc-secondary;
+    }
+
+    .social-links {
+      padding: 30px 15px 0 0;
+      a, a:visited {
+        color: @nyc-primary;
+      }
+
+      a:hover {
+        color: @nyc-primary-darker;
+      }
+    }
+    .event-location {
+      padding-bottom: 15px;
+      color: @brand-primary;
+      font-size: (@font-size-h1 * 1.6);
+      line-height: (@font-size-h1 * 1.8);
+    }
+  }
+}
+
 .babyshowerboston {
 
   .divider {
@@ -118,7 +156,7 @@ header {
 
 .babyshowerdc {
   header {
-    background: #94bfe8 url("./head_bg.png") repeat-x;
+    background: #94bfe8 url("./head_babyshowerdc_bg.png") repeat-x;
     .social-links {
       padding: 34px 15px 0 0;
     }
@@ -249,11 +287,23 @@ article {
   }
 }
 
+.babyshower {
+  .navbar {
+    &-default {
+      background-color: @nyc-primary;
+
+      li > a:hover,
+      .active > a,
+      .active > a:hover {
+        background-color: @nyc-primary-darker;
+      }
+    }
+  }
+}
+
 .babyshowerboston {
   .navbar {
-
     &-default {
-
       background-color: @boston-blue;
 
       li > a:hover,
@@ -623,6 +673,12 @@ footer {
   }
 }
 
+.babyshower {
+  footer {
+    background-color: @nyc-primary;
+  }
+}
+
 article,
 aside.widgets {
   img {
@@ -643,12 +699,12 @@ article {
 // Jumbotron =================================================================
 
 .jumbotron {
-  padding: 20px 0 20px @padding-large-horizontal;
+  padding: 20px @padding-large-horizontal 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
   h1, .h1 {
     margin: 0;
-    padding: 0;
+    padding: 0 0 2px 0;
     font-size: ceil(@font-size-h1 * 1.2);
     word-spacing: -0.3em;
     white-space: nowrap;
@@ -674,6 +730,12 @@ article {
     line-height: @font-size-h3;
     font-size: @font-size-h3;
     word-spacing: -3px;
+  }
+}
+
+.babyshower {
+  .jumbotron {
+    padding: 30px @padding-large-horizontal 20px @padding-large-horizontal;
   }
 }
 
