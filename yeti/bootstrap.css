@@ -5849,6 +5849,9 @@ header img {
 header .event-location {
   font-family: 'Roboto Slab', serif;
 }
+.fit-pregnancy {
+  fill: #ec058d;
+}
 .babyshower .divider {
   color: #ec058d;
 }
