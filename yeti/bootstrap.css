@@ -6347,19 +6347,8 @@ article h2:first-of-type {
   text-transform: uppercase;
   background-color: #fff;
 }
-.widget h3 {
-  display: inline-block;
-  width: auto;
-  padding: 5px 10px 5px 10px;
-  margin: 0 0 10px 0;
-  line-height: normal;
-  font-size: 14px;
-  color: #fff !important;
-  background-color: #ca2057;
-  -webkit-transform: rotate(-1deg) translate(-1px, -5px);
-  transform: rotate(-1deg) translate(-1px, -5px);
-  box-shadow: 0 3px 5px #888;
-  -webkit-backface-visibility: hidden;
+.widget > h3 {
+  display: none;
 }
 .widget h4 {
   font-size: 13px;
