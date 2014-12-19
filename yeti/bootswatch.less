@@ -172,6 +172,51 @@ header {
   }
 }
 
+.babyshowerla {
+
+  .divider {
+    color: @la-primary;
+  }
+
+  .brand {
+    color: @la-primary;
+  }
+
+  header {
+    color: @la-primary;
+    background-color: @la-secondary;
+
+    .social-links {
+      a, a:visited {
+        color: @la-primary;
+      }
+
+      a:hover {
+        color: @la-darker;
+      }
+    }
+
+    .event-location {
+      padding-bottom: 15px;
+      color: #ffffff;
+      font-size: (@font-size-h1 * 1.3);
+      line-height: (@font-size-h1 * 1.5);
+    }
+
+    .event-summary {
+      margin-top: 14px;
+      padding: 9px 9px 9px 9px;
+      max-width: 625px;
+      color: #FFFFFF;
+      background-color: @boston-blue;
+      p {
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 @media (min-width: @screen-md-min) {
   header {
 	max-height: 230px;
@@ -191,7 +236,7 @@ header {
 	  background-color: #5f0e30;
 	}
   }
-  .text-vertical-center {
+    .text-vertical-center {
 	p {
 	  position: relative;
 	  top: 50%;
@@ -199,6 +244,12 @@ header {
 	  -ms-transform: translateY(-50%);
 	  transform: translateY(-50%);
 	}
+  }
+
+  .babyshowerla {
+    header {
+      max-height: 400px;
+    }
   }
 }
 

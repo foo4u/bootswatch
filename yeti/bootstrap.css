@@ -5916,6 +5916,40 @@ header .event-location {
   font-size: 51.2px;
   line-height: 57.6px;
 }
+.babyshowerla .divider {
+  color: #d6126d;
+}
+.babyshowerla .brand {
+  color: #d6126d;
+}
+.babyshowerla header {
+  color: #d6126d;
+  background-color: #99d6e8;
+}
+.babyshowerla header .social-links a,
+.babyshowerla header .social-links a:visited {
+  color: #d6126d;
+}
+.babyshowerla header .social-links a:hover {
+  color: #f04c98;
+}
+.babyshowerla header .event-location {
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-size: 41.6px;
+  line-height: 48px;
+}
+.babyshowerla header .event-summary {
+  margin-top: 14px;
+  padding: 9px 9px 9px 9px;
+  max-width: 625px;
+  color: #FFFFFF;
+  background-color: #022e62;
+}
+.babyshowerla header .event-summary p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
 @media (min-width: 992px) {
   header {
     max-height: 230px;
@@ -5939,6 +5973,9 @@ header .event-location {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .babyshowerla header {
+    max-height: 400px;
   }
 }
 article p {
