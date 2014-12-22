@@ -217,6 +217,48 @@ header {
   }
 }
 
+.babyshowermiami {
+
+  .divider {
+    color: @boston-blue;
+  }
+
+  header {
+    background-color: @miami-header-bg;
+
+    .divider {
+      color: @miami-primary;
+    }
+
+    .social-links {
+      a, a:visited {
+        color: @miami-primary;
+      }
+
+      a:hover {
+        color: @miami-primary-darker;
+      }
+    }
+
+    .event-location {
+      margin: 10px 0 20px 0;
+      color: @miami-primary;
+      font-size: (@font-size-h1 * 2.0);
+      line-height: (@font-size-h1 * 2.0);
+    }
+
+    .event-summary {
+      margin: 14px 0 20px -20px;
+      padding: 9px 9px 9px 9px;
+      max-width: 640px;
+      p {
+//        color: #FFFFFF;
+//        font-size: 20px;
+      }
+    }
+  }
+}
+
 @media (min-width: @screen-md-min) {
   header {
 	max-height: 230px;
@@ -246,9 +288,10 @@ header {
 	}
   }
 
-  .babyshowerla {
+  .babyshowerla,
+  .babyshowermiami {
     header {
-      max-height: 400px;
+      max-height: 350px;
     }
   }
 }
@@ -723,8 +766,17 @@ footer {
   padding: @padding-large-vertical @padding-large-horizontal;
   background-color: @brand-primary;
   color: #fff;
+  h4 {
+    color: #fff;
+    text-transform: none;
+    font-style: italic;
+    margin: 14px 0 10px 5px;
+  }
   a, a:hover, a:visited {
 	color: #fff;
+  }
+  .sponsors {
+    margin-bottom: 40px;
   }
 }
 

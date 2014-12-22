@@ -5950,6 +5950,33 @@ header .event-location {
   color: #FFFFFF;
   font-size: 20px;
 }
+.babyshowermiami .divider {
+  color: #022e62;
+}
+.babyshowermiami header {
+  background-color: #c4d52c;
+}
+.babyshowermiami header .divider {
+  color: #ea297d;
+}
+.babyshowermiami header .social-links a,
+.babyshowermiami header .social-links a:visited {
+  color: #ea297d;
+}
+.babyshowermiami header .social-links a:hover {
+  color: #e1166e;
+}
+.babyshowermiami header .event-location {
+  margin: 10px 0 20px 0;
+  color: #ea297d;
+  font-size: 64px;
+  line-height: 64px;
+}
+.babyshowermiami header .event-summary {
+  margin: 14px 0 20px -20px;
+  padding: 9px 9px 9px 9px;
+  max-width: 640px;
+}
 @media (min-width: 992px) {
   header {
     max-height: 230px;
@@ -5974,8 +6001,9 @@ header .event-location {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .babyshowerla header {
-    max-height: 400px;
+  .babyshowerla header,
+  .babyshowermiami header {
+    max-height: 350px;
   }
 }
 article p {
@@ -6311,10 +6339,19 @@ footer {
   background-color: #ca2057;
   color: #fff;
 }
+footer h4 {
+  color: #fff;
+  text-transform: none;
+  font-style: italic;
+  margin: 14px 0 10px 5px;
+}
 footer a,
 footer a:hover,
 footer a:visited {
   color: #fff;
+}
+footer .sponsors {
+  margin-bottom: 40px;
 }
 .babyshower footer {
   background-color: #ec058d;
