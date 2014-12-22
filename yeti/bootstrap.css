@@ -5950,13 +5950,10 @@ header .event-location {
   font-size: 20px;
 }
 .babyshowermiami .divider {
-  color: #022e62;
+  color: #ea297d;
 }
 .babyshowermiami header {
   background-color: #c4d52c;
-}
-.babyshowermiami header .divider {
-  color: #ea297d;
 }
 .babyshowermiami header .social-links a,
 .babyshowermiami header .social-links a:visited {
@@ -5972,9 +5969,12 @@ header .event-location {
   line-height: 64px;
 }
 .babyshowermiami header .event-summary {
-  margin: 14px 0 20px -20px;
+  margin: 14px 0 10px -20px;
   padding: 9px 9px 9px 9px;
-  max-width: 640px;
+  max-width: 690px;
+}
+.babyshowermiami header .event-summary p {
+  font-size: 20px;
 }
 @media (min-width: 992px) {
   header {
@@ -6367,15 +6367,16 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 20px 16px 20px 16px;
+  padding: 10px 16px 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   margin: 0;
   padding: 0 0 2px 0;
-  font-size: 39px;
-  word-spacing: -0.3em;
+  font-size: 45px;
+  font-weight: 700;
+  word-spacing: -0.25em !important;
   white-space: nowrap;
 }
 .jumbotron h1 > span,

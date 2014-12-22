@@ -219,15 +219,11 @@ header {
 .babyshowermiami {
 
   .divider {
-    color: @boston-blue;
+    color: @miami-primary;
   }
 
   header {
     background-color: @miami-header-bg;
-
-    .divider {
-      color: @miami-primary;
-    }
 
     .social-links {
       a, a:visited {
@@ -247,9 +243,12 @@ header {
     }
 
     .event-summary {
-      margin: 14px 0 20px -20px;
+      margin: 14px 0 10px -20px;
       padding: 9px 9px 9px 9px;
-      max-width: 640px;
+      max-width: 690px;
+      p {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -801,14 +800,15 @@ article {
 // Jumbotron =================================================================
 
 .jumbotron {
-  padding: 20px @padding-large-horizontal 20px @padding-large-horizontal;
+  padding: 10px @padding-large-horizontal 20px @padding-large-horizontal;
   margin: 0px auto 0px auto;
 
   h1, .h1 {
     margin: 0;
     padding: 0 0 2px 0;
-    font-size: ceil(@font-size-h1 * 1.2);
-    word-spacing: -0.3em;
+    font-size: ceil(@font-size-h1 * 1.4);
+    font-weight: 700;
+    word-spacing: -0.25em !important;
     white-space: nowrap;
 
     > span {
