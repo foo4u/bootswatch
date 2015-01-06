@@ -5950,21 +5950,22 @@ header .event-location {
   font-size: 20px;
 }
 .babyshowermiami .divider {
-  color: #ea297d;
+  color: #e42594;
 }
 .babyshowermiami header {
-  background-color: #c4d52c;
+  padding-left: 7px;
+  background-color: #33cbd2;
 }
 .babyshowermiami header .social-links a,
 .babyshowermiami header .social-links a:visited {
-  color: #ea297d;
+  color: #e42594;
 }
 .babyshowermiami header .social-links a:hover {
-  color: #e1166e;
+  color: #d31a85;
 }
 .babyshowermiami header .event-location {
-  margin: 10px 0 20px 0;
-  color: #ea297d;
+  margin: 0 0 0 0;
+  color: #e42594;
   font-size: 64px;
   line-height: 64px;
 }
@@ -6367,7 +6368,7 @@ article h2:first-of-type {
   padding-top: 0;
 }
 .jumbotron {
-  padding: 10px 16px 20px 16px;
+  padding: 20px 16px 20px 16px;
   margin: 0px auto 0px auto;
 }
 .jumbotron h1,
