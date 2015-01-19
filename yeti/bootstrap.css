@@ -3,7 +3,7 @@
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
- * Copyright 2012-2014 Thomas Park
+ * Copyright 2012-2015 Thomas Park
  * Licensed under MIT
  * Based on Bootstrap
 */
@@ -5952,6 +5952,9 @@ header .event-location {
 .babyshowermiami .divider {
   color: #e42594;
 }
+.babyshowermiami .event-image > img {
+  max-height: 220px;
+}
 .babyshowermiami header {
   padding-left: 7px;
   background-color: #33cbd2;
@@ -5970,8 +5973,8 @@ header .event-location {
   line-height: 64px;
 }
 .babyshowermiami header .event-summary {
-  margin: 14px 0 10px -20px;
-  padding: 9px 9px 9px 9px;
+  margin: -10px 0 0 -20px;
+  padding: 0;
   max-width: 690px;
 }
 .babyshowermiami header .event-summary p {
