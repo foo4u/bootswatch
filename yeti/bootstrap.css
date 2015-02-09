@@ -6004,8 +6004,7 @@ header .event-location {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .babyshowerla header,
-  .babyshowermiami header {
+  header {
     max-height: 350px;
   }
 }
