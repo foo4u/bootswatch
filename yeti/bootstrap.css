@@ -6460,3 +6460,7 @@ article h2:first-of-type {
     max-height: 220px !important;
   }
 }
+.event-seminars img {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
