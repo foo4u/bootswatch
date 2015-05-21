@@ -5897,6 +5897,10 @@ header .event-location {
   font-size: 51.2px;
   line-height: 57.6px;
 }
+.babyshower header .event-summary {
+  font-size: 51.2px;
+  line-height: 57.6px;
+}
 .babyshowerboston .divider {
   color: #022e62;
 }
@@ -6366,9 +6370,6 @@ footer a:visited {
 footer .sponsors {
   margin-bottom: 40px;
 }
-.babyshower footer {
-  background-color: #ffffff;
-}
 article img,
 aside.widgets img {
   display: block;
@@ -6411,7 +6412,6 @@ article h2:first-of-type {
   font-weight: 300;
   line-height: 19px;
   font-size: 19px;
-  word-spacing: -3px;
 }
 .babyshower .jumbotron {
   padding: 30px 16px 20px 16px;
