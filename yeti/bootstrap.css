@@ -5824,6 +5824,19 @@ h6 {
   text-transform: uppercase;
   color: #ca2057;
 }
+h4.sponsors {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #989a9c;
+  text-transform: lowercase;
+}
+.social-links {
+  margin-top: 10px;
+}
+.social-links a {
+  font-size: 12px;
+}
 header {
   margin: 0 -15px 0 -15px;
   padding: 0;
@@ -5840,9 +5853,6 @@ header h6 {
   color: #fff;
   text-transform: none;
 }
-header .social-links {
-  padding: 20px 15px 0 0;
-}
 header img {
   margin-right: 30px;
 }
@@ -5850,38 +5860,39 @@ header .event-location {
   font-family: 'Roboto Slab', serif;
 }
 .fit-pregnancy {
-  fill: #ec058d;
+  fill: #ffffff;
 }
 .babyshower .divider {
-  color: #ec058d;
+  color: #ffffff;
 }
 .babyshower header {
-  background: #e7e7e7 url("head_babyshower_bg.png") repeat-x;
-  color: #ec058d;
+  background: #009bc6 url("head_babyshower_bg.png") repeat-x;
+  color: #ffffff;
 }
 .babyshower header h2,
 .babyshower header h3,
 .babyshower header h4,
 .babyshower header h5,
 .babyshower header h6 {
-  color: #6e6f73;
+  color: #ffffff;
   text-transform: none;
 }
 .babyshower header p {
-  color: #6e6f73;
+  color: #ffffff;
 }
-.babyshower header .social-links {
-  padding: 30px 15px 0 0;
+.babyshower header .event-image {
+  margin: 20px 0 15px 40px;
 }
 .babyshower header .social-links a,
 .babyshower header .social-links a:visited {
-  color: #ec058d;
+  color: #ffffff;
 }
 .babyshower header .social-links a:hover {
   color: #b8046e;
 }
 .babyshower header .event-location {
-  padding-bottom: 15px;
+  margin-top: 10px;
+  padding-bottom: 10px;
   color: #ca2057;
   font-size: 51.2px;
   line-height: 57.6px;
@@ -6068,12 +6079,12 @@ article p {
   background-color: #9e1944;
 }
 .babyshower .navbar-default {
-  background-color: #ec058d;
+  background-color: #ca2057;
 }
 .babyshower .navbar-default li > a:hover,
 .babyshower .navbar-default .active > a,
 .babyshower .navbar-default .active > a:hover {
-  background-color: #b8046e;
+  background-color: #ca2057;
 }
 .babyshowerboston .navbar-default {
   background-color: #022e62;
@@ -6356,7 +6367,7 @@ footer .sponsors {
   margin-bottom: 40px;
 }
 .babyshower footer {
-  background-color: #ec058d;
+  background-color: #ffffff;
 }
 article img,
 aside.widgets img {

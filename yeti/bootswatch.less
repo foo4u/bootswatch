@@ -61,6 +61,21 @@ h1, h2, h3, h4, h5, h6 {
   color: @brand-primary;
 }
 
+h4.sponsors {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #989a9c;
+  text-transform: lowercase;
+}
+
+.social-links {
+  margin-top: 10px;
+  a {
+    font-size: 12px;
+  }
+}
+
 header {
   margin: 0 -15px 0 -15px;
   padding: 0;
@@ -73,10 +88,6 @@ header {
   h2, h3, h4, h5, h6 {
 	color: #fff;
 	text-transform: none;
-  }
-
-  .social-links {
-	padding: 20px 15px 0 0;
   }
 
   img {
@@ -111,8 +122,15 @@ header {
       color: @nyc-secondary;
     }
 
+    .event-image {
+      margin: 20px 0 15px 40px;
+    }
+
+//    .event-summary {
+//      border-top: 2px solid @nyc-primary;
+//    }
+
     .social-links {
-      padding: 30px 15px 0 0;
       a, a:visited {
         color: @nyc-primary;
       }
@@ -122,7 +140,8 @@ header {
       }
     }
     .event-location {
-      padding-bottom: 15px;
+      margin-top: 10px;
+      padding-bottom: 10px;
       color: @brand-primary;
       font-size: (@font-size-h1 * 1.6);
       line-height: (@font-size-h1 * 1.8);
@@ -385,12 +404,12 @@ article {
 .babyshower {
   .navbar {
     &-default {
-      background-color: @nyc-primary;
+      background-color: @brand-primary;
 
       li > a:hover,
       .active > a,
       .active > a:hover {
-        background-color: @nyc-primary-darker;
+        background-color: @brand-primary;
       }
     }
   }
@@ -919,5 +938,5 @@ article {
 }
 
 .event-seminars img:last-of-type {
-  
+
 }
